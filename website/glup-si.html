@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glup si</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Glup si</h1>
+    <p>Ne znas ziqsaaaaaaaaaaaa :((((.</p>
+    <p> (cigu ligana) </p>
+<!-- Add the image -->
+    <img src="sad_boki.jpg" alt="sad boki">
+</body>
+<div class="button-container">
+                <button id="button1">Nazad</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script for button click handling -->
+    <script>
+        // Get references to the buttons
+        const button1 = document.getElementById('button1');
+
+        // Add click event listeners to the buttons
+
+        button1.addEventListener('click', function() {
+            redirectToQuestion7Page();
+        });
+
+        // Function to redirect to the "glup si" page
+        function redirectToGlupSiPage() {
+            window.location.href = 'glup-si.html';
+        }
+
+        // Function to redirect to the question 7 page
+        function redirectToQuestion7Page() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

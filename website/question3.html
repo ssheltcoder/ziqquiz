@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-hidden">
+        <nav>
+            <div class="logo">Bojan Jovic Quiz</div>
+        </nav>
+    </header>
+    <main>
+        <section id="question2" class="section">
+            <h2>Question 3</h2>
+            <p>Ko je bojanov BFF?</p>
+            <!-- Add container for buttons -->
+            <div class="button-container">
+                <button id="button1">Luka Malenic</button>
+                <button id="button2">Ognjen Bajagic</button>
+                <button id="button3">SuperMata</button>
+                <button id="button4">Longer32</button>
+                <button id="button5">sshelt</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script for button click handling -->
+    <script>
+        // Get references to the buttons
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const button3 = document.getElementById('button3');
+        const button4 = document.getElementById('button4');
+        const button5 = document.getElementById('button5');
+
+        // Add click event listeners to the buttons
+        button1.addEventListener('click', function() {
+            redirectToGlupSiPage();
+        });
+   
+                button2.addEventListener('click', function() {
+            redirectToGlupSiPage();
+        });
+
+        button3.addEventListener('click', function() {
+            redirectToGlupSiPage();
+        });
+
+                button4.addEventListener('click', function() {
+            redirectToGlupSiPage();
+        });
+
+        button5.addEventListener('click', function() {
+            redirectToQuestion4Page();
+        });
+
+        // Function to redirect to the "glup si" page
+        function redirectToGlupSiPage() {
+            window.location.href = 'glup-si.html';
+        }
+
+        // Function to redirect to the question 4 page
+        function redirectToQuestion4Page() {
+            window.location.href = 'question4.html';
+        }
+    </script>
+</body>
+</html>
