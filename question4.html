@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-hidden">
+        <nav>
+            <div class="logo">Bojan Jovic Quiz</div>
+        </nav>
+    </header>
+    <main>
+        <section id="question2" class="section">
+            <h2>Question 4</h2>
+            <p>Koje je rase Bojan?</p>
+            <!-- Add container for buttons -->
+            <div class="button-container">
+                <button id="button1">African american</button>
+                <button id="button2">CIGANSTURA</button>
+                <button id="button3">Normalan</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script for button click handling -->
+    <script>
+        // Get references to the buttons
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const button3 = document.getElementById('button3');
+
+        // Add click event listeners to the buttons
+        button1.addEventListener('click', function() {
+            redirectToGlupSiPage();
+        });
+
+        button3.addEventListener('click', function() {
+            redirectToGlupSiPage();
+        });
+
+        button2.addEventListener('click', function() {
+            redirectToQuestion5Page();
+        });
+
+        // Function to redirect to the "glup si" page
+        function redirectToGlupSiPage() {
+            window.location.href = 'glup-si.html';
+        }
+
+        // Function to redirect to the question 5 page
+        function redirectToQuestion5Page() {
+            window.location.href = 'question5.html';
+        }
+    </script>
+</body>
+</html>
